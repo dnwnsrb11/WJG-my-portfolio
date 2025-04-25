@@ -4,6 +4,7 @@
 import { DefaultSeo } from "next-seo";
 
 export function SeoConfig() {
+  const ogImageUrl = "/img/testPortfolio.png"; // 루트 상대 경로 문자열 사용
   return (
     <DefaultSeo
       titleTemplate="%s | WJG 포트폴리오"
@@ -17,14 +18,14 @@ export function SeoConfig() {
         siteName: "WJG 포트폴리오",
         title: "WJG - 프론트엔드 개발자 포트폴리오",
         description: "UX를 중시하는 프론트엔드 개발자 우준규입니다.",
-        // images: [
-        //   {
-        //     url: "https://wjg-portfolio.vercel.app/og-image.jpg",
-        //     width: 1200,
-        //     height: 630,
-        //     alt: "WJG 포트폴리오",
-        //   },
-        // ],
+        images: [
+          {
+            url: ogImageUrl,
+            width: 1200,
+            height: 630,
+            alt: "WJG 포트폴리오",
+          },
+        ],
       }}
       additionalMetaTags={[
         {
