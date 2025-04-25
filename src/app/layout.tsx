@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "../../styles/globals.css";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "WJG - Portfolio",
@@ -13,6 +14,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
+      <header>
+        <ul>
+          <li><Link href="/">Home</Link></li>
+          <li><Link href="/about">About</Link></li>
+        </ul>
+      </header>
       <body>
         {children}
       </body>
