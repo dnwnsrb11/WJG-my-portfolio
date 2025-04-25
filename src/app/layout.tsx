@@ -23,6 +23,11 @@ export default function RootLayout({
       <body>
         {children}
       </body>
+      <footer>
+        <div>
+          <h1>WJG</h1>
+        </div>
+      </footer>
     </html>
   );
 }
