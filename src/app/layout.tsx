@@ -20,6 +20,9 @@ export const metadata = {
         alt: "WJG 포트폴리오",
       },
     ],
+    icons: {
+      icon: "https://wjg-my-portfolio.vercel.app/img/logo.png", // /public/favicon.ico
+    },
   },
 };
 
