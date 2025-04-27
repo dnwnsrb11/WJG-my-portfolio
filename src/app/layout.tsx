@@ -3,21 +3,21 @@ import Link from "next/link";
 
 // 메타데이터 API 사용
 export const metadata = {
-  title: "WJG - 프론트엔드 개발자 포트폴리오",
-  description: "UX를 중시하는 프론트엔드 개발자 우준규입니다.",
+  title: "WJG",
+  description: "문제 해결의 길을 걷는 FrontEnd 개발자입니다.",
   openGraph: {
     type: "website",
     locale: "ko_KR",
     url: "https://wjg-my-portfolio.vercel.app/",
-    siteName: "WJG 포트폴리오",
-    title: "WJG - 프론트엔드 개발자 포트폴리오",
-    description: "UX를 중시하는 프론트엔드 개발자 우준규입니다.",
+    siteName: "WJG FrontEnd Developer",
+    title: "WJG - 문제 해결의 길을 걷는 FrontEnd 개발자입니다",
+    description: "문제 해결의 길을 걷는 FrontEnd 개발자입니다",
     images: [
       {
         url: "https://wjg-my-portfolio.vercel.app/img/metaImg.png",
         width: 1200,
         height: 630,
-        alt: "WJG 포트폴리오",
+        alt: "WJG FrontEnd Developer",
       },
     ],
   },
