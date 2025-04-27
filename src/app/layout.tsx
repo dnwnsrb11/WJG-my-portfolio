@@ -14,7 +14,7 @@ export const metadata = {
     description: "UX를 중시하는 프론트엔드 개발자 우준규입니다.",
     images: [
       {
-        url: "https://wjg-my-portfolio.vercel.app/img/testPortfolio.png",
+        url: "https://wjg-my-portfolio.vercel.app/img/metaImg.png",
         width: 1200,
         height: 630,
         alt: "WJG 포트폴리오",
