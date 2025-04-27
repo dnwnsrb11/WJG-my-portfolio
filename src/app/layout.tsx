@@ -35,10 +35,10 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body>
-        <header className="flex justify-center">
+        <header className="fixed top-7 left-0 right-0 flex justify-center z-10">
           <NavBar />
         </header>
-        <main>{children}</main>
+        <main className="pt-24">{children}</main>
         <footer>
           <div>
             <h1>WJG</h1>
