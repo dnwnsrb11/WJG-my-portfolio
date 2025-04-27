@@ -4,7 +4,7 @@
 import { DefaultSeo } from "next-seo";
 
 export function SeoConfig() {
-  const ogImageUrl = "public/img/testPortfolio.png"; // 루트 상대 경로 문자열 사용
+  const ogImageUrl = "https://wjg-my-portfolio.vercel.app/img/testPortfolio.png"; // 루트 상대 경로 문자열 사용
   return (
     <DefaultSeo
       titleTemplate="%s | WJG 포트폴리오"

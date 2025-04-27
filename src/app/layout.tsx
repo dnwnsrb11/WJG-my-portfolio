@@ -8,10 +8,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <head>
-        <SeoConfig />
-      </head>
       <body>
+        <SeoConfig />
         <header>
           <ul>
             <li>
