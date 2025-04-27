@@ -35,14 +35,16 @@ export default function RootLayout({
     <html lang="ko">
       <body>
         <header>
-          <ul>
-            <li>
-              <Link href="/">Home</Link>
-            </li>
-            <li>
-              <Link href="/about">About</Link>
-            </li>
-          </ul>
+          <div>
+            <ul>
+              <li>
+                <Link href="/">Home</Link>
+              </li>
+              <li>
+                <Link href="/about">About</Link>
+              </li>
+            </ul>
+          </div>
         </header>
         <main>{children}</main>
         <footer>
