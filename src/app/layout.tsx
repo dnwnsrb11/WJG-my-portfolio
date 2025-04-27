@@ -35,14 +35,17 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body>
-        <header>
-          <nav className="bg-white border border-white">
-            <ul>
+        <header className="flex justify-center">
+          <nav className="bg-background rounded-xl">
+            <ul className="flex justify-center gap-12 py-3 px-7 text-xl">
               <li>
                 <Link href="/">Home</Link>
               </li>
               <li>
                 <Link href="/about">About</Link>
+              </li>
+              <li>
+                <Link href="/about">Project</Link>
               </li>
             </ul>
           </nav>
