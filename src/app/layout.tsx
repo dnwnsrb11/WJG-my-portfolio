@@ -1,5 +1,5 @@
+import { NavBar } from "@/components/nav/navBac";
 import "../../styles/globals.css";
-import Link from "next/link";
 
 // 메타데이터 API 사용
 export const metadata = {
@@ -36,19 +36,7 @@ export default function RootLayout({
     <html lang="ko">
       <body>
         <header className="flex justify-center">
-          <nav className="bg-background rounded-xl">
-            <ul className="flex justify-center gap-12 py-3 px-7 text-xl">
-              <li>
-                <Link href="/">Home</Link>
-              </li>
-              <li>
-                <Link href="/about">About</Link>
-              </li>
-              <li>
-                <Link href="/about">Project</Link>
-              </li>
-            </ul>
-          </nav>
+          <NavBar />
         </header>
         <main>{children}</main>
         <footer>
