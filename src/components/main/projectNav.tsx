@@ -1,32 +1,79 @@
 export const ProjectNav = () => {
-  const Velog = "/img/velog.jpg";
-  const Git = "/img/github.svg";
-  const Notion = "/img/notion.svg";
+  const links = [
+    {
+      id: "velog",
+      name: "Velog",
+      icon: "/img/velog.jpg",
+      url: "https://velog.io/@dnwnsrb11/posts",
+      description: "기술 블로그 및 개발 일지",
+    },
+    {
+      id: "github",
+      name: "GitHub",
+      icon: "/img/github.svg",
+      url: "https://github.com/dnwnsrb11",
+      description: "프로젝트 소스 코드",
+    },
+    {
+      id: "notion",
+      name: "Notion",
+      icon: "/img/notion.svg",
+      url: "https://indigo-sprite-bd5.notion.site/1b14ba04719a80378063ccf6b7f2f448?pvs=74",
+      description: "프로젝트 문서 및 기록",
+    },
+  ];
+
   return (
-    <section className="bg-background py-3 px-14 rounded-2xl mt-4 flex gap-28">
-      <a href="https://velog.io/@dnwnsrb11/posts" target="_blank" rel="noopener noreferrer" className="flex gap-4 items-center hover:text-title hover:scale-110 transition-all duration-300">
-        <div className="w-10 h-10 rounded-md overflow-hidden">
-          <img src={Velog} alt="VelogImg" />
-        </div>
-        <p className="text-lg">Velog</p>
-      </a>
-      <a href="https://github.com/dnwnsrb11" target="_blank" rel="noopener noreferrer" className="flex gap-4 items-center hover:text-title hover:scale-110 transition-all duration-300">
-        <div className="w-10 h-10 rounded-md overflow-hidden">
-          <img src={Git} alt="VelogImg" />
-        </div>
-        <p className="text-lg">Git</p>
-      </a>
-      <a
-        href="https://indigo-sprite-bd5.notion.site/1b14ba04719a80378063ccf6b7f2f448?pvs=74"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="flex gap-4 items-center hover:text-title hover:scale-110 transition-all duration-300"
-      >
-        <div className="w-10 h-10 rounded-md overflow-hidden">
-          <img src={Notion} alt="VelogImg" />
-        </div>
-        <p className="text-lg">Notion</p>
-      </a>
+    <section className="w-full py-6 rounded-2xl mt-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        {links.map((link) => (
+          <a
+            key={link.id}
+            href={link.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative bg-gray-800/50 border border-gray-700 rounded-xl overflow-hidden transition-all duration-300 hover:border-[#FF6D38] group"
+          >
+            <div className="relative z-10 p-5 flex flex-col items-center text-center">
+              <div className="w-16 h-16 overflow-hidden border-gray-700 group-hover:border-[#FF6D38] transition-all duration-300">
+                <img
+                  src={link.icon}
+                  alt={`${link.name} 아이콘`}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+
+              <div className="mt-4">
+                <h4 className="text-xl font-medium text-white group-hover:text-[#FF6D38] transition-colors duration-300">
+                  {link.name}
+                </h4>
+                <p className="text-sm text-gray-400 mt-2 opacity-80">
+                  {link.description}
+                </p>
+              </div>
+              <div className="mt-4 opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300">
+                <span className="text-sm text-[#FF6D38] flex items-center">
+                  방문하기
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-4 w-4 ml-1"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M14 5l7 7m0 0l-7 7m7-7H3"
+                    />
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
     </section>
   );
 };
