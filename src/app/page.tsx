@@ -2,7 +2,10 @@ import { ProjectNav } from "@/components/main/projectNav";
 
 import dynamic from "next/dynamic";
 const WalkAnimation = dynamic(
-  () => import("@/components/main/walkAnimation").then(mod => ({ default: mod.WalkAnimation })),
+  () =>
+    import("@/components/main/walkAnimation").then((mod) => ({
+      default: mod.WalkAnimation,
+    })),
   { ssr: false }
 );
 
@@ -12,7 +15,7 @@ export default function Home() {
       <section className="w-full flex gap-2 items-end relative">
         <article className="flex flex-col pt-20 w-full mx-4">
           <div className="text-5xl flex flex-col gap-2">
-            <h1>문제 해결의 길을 걷는</h1>
+            <h1 className="font-thin">문제 해결의 길을 걷는</h1>
             <h1>
               <span className="text-title text-7xl font-bold">
                 FrontEnd 개발자
@@ -20,9 +23,20 @@ export default function Home() {
               입니다.
             </h1>
           </div>
+          <p className="text-gray-400 max-w-2xl mt-2 mb-6 text-lg font-medium leading-relaxed opacity-90">
+            창의적인 문제 해결과 직관적인 사용자 경험을 만드는 데 열정을 가진
+            <span className="text-title"> 프론트엔드 개발자입니다.</span> UX/UI
+            전문가로서, 사용자 경험을 최우선으로 고려하며, 렌더링 최적화와
+            모션을 활용해 최적의 경험을 제공하는 개발을 즐깁니다.
+          </p>
         </article>
-        <div className="absolute right-0 -bottom-9">
-          <WalkAnimation width={320} height={220} />
+        <div
+          className={`absolute right-0 -bottom-9 transition-all duration-1000 delay-300 transform`}
+        >
+          <div className="relative">
+            <div className="absolute -inset-4 bg-gradient-to-r from-orange-500 to-[#FF6D38 / 30] rounded-full opacity-20 blur-xl"></div>
+            <WalkAnimation width={320} height={220} />
+          </div>
         </div>
       </section>
       <hr className="w-full border-stroke mb-10" />
