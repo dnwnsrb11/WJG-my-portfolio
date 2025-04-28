@@ -24,7 +24,7 @@ export const ProjectNav = () => {
   ];
 
   return (
-    <section className="w-full py-6 rounded-2xl mt-6">
+    <section className="w-full py-6 rounded-2xl">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {links.map((link) => (
           <a
@@ -34,8 +34,8 @@ export const ProjectNav = () => {
             rel="noopener noreferrer"
             className="relative bg-gray-800/50 border border-gray-700 rounded-xl overflow-hidden transition-all duration-300 hover:border-[#FF6D38] group"
           >
-            <div className="relative z-10 p-5 flex flex-col items-center text-center">
-              <div className="w-16 h-16 overflow-hidden border-gray-700 group-hover:border-[#FF6D38] transition-all duration-300">
+            <div className="relative z-10 p-5 gap-5 flex items-center text-center justify-center">
+              <div className="w-16 h-16 rounded-lg overflow-hidden border-gray-700 group-hover:border-[#FF6D38] transition-all duration-300">
                 <img
                   src={link.icon}
                   alt={`${link.name} 아이콘`}
@@ -43,20 +43,20 @@ export const ProjectNav = () => {
                 />
               </div>
 
-              <div className="mt-4">
+              <div className="flex flex-col items-start justify-center gap-1">
                 <h4 className="text-xl font-medium text-white group-hover:text-[#FF6D38] transition-colors duration-300">
                   {link.name}
                 </h4>
-                <p className="text-sm text-gray-400 mt-2 opacity-80">
+                <p className="text-sm text-gray-400 opacity-80">
                   {link.description}
                 </p>
               </div>
-              <div className="mt-4 opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300">
-                <span className="text-sm text-[#FF6D38] flex items-center">
+              <div className="opacity-0 group-hover:opacity-100 transform translate-x-3 group-hover:translate-x-0 transition-all duration-300">
+                <span className="text-sm text-[#FF6D38] flex items-center justify-center">
                   방문하기
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-4 w-4 ml-1"
+                    className="h-4 w-4"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
