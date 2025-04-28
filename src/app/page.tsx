@@ -1,4 +1,4 @@
-import { ProjectNav } from "@/components/main/ProjectNav";
+import { ProjectNav } from "@/components/main/projectNav";
 
 export default function Home() {
   return (
