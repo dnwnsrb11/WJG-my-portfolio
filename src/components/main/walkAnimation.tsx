@@ -10,8 +10,12 @@ interface WalkAnimationProps {
 
 export const WalkAnimation = ({ width, height }: WalkAnimationProps) => {
   return (
-    <div style={{ width, height }}>
-      <Lottie animationData={walkAnimation} loop={true} />
+    <div className="">
+      <Lottie
+        animationData={walkAnimation}
+        loop={true}
+        style={{ width, height }}
+      />
     </div>
   );
 };
