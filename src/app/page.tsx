@@ -1,5 +1,10 @@
 import { ProjectNav } from "@/components/main/projectNav";
-import { WalkAnimation } from "@/components/main/walkAnimation";
+
+import dynamic from "next/dynamic";
+const WalkAnimation = dynamic(
+  () => import("@/components/main/walkAnimation").then(mod => ({ default: mod.WalkAnimation })),
+  { ssr: false }
+);
 
 export default function Home() {
   return (
