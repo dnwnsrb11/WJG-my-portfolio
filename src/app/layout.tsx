@@ -34,12 +34,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body>
+      <body className="flex min-h-screen">
         <header className="fixed top-7 left-0 right-0 flex justify-center z-10">
           <NavBar />
         </header>
-        <main className="pt-24">{children}</main>
-        <footer>
+        <main className="pt-24 flex-grow">{children}</main>
+        <footer className="mt-auto">
           <div>
             <h1>WJG</h1>
           </div>
