@@ -1,7 +1,10 @@
 // tailwind.config.js
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/app/**/*.{js,ts,jsx,tsx}", "./src/components/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./src/app/**/*.{js,ts,jsx,tsx}",
+    "./src/components/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {
       colors: {
@@ -11,9 +14,10 @@ module.exports = {
         background: "#232323",
         primary: "#FFFFFF",
         stroke: "#393939",
+        background: "#1A1E26",
       },
       screens: {
-        custom: "1130px", 
+        custom: "1130px",
       },
     },
   },

@@ -35,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body className="flex flex-col min-h-screen">
-        <header className="fixed top-7 left-0 right-0 flex justify-center z-10">
+        <header className="fixed top-7 left-0 right-0 flex justify-center z-30">
           <NavBar />
         </header>
         <main className="pt-24 flex-grow">{children}</main>
