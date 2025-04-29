@@ -23,14 +23,14 @@ export const AboutMe = () => {
           </h3>
         </section>
         <hr className="w-full border-stroke mb-10" />
-        <section className="flex flex-col mx-6">
+        <section className="flex flex-col mx-6 items-center custom:items-start">
           <div className="mb-1">
             <p className="text-xl font-light text-text2">
               저는 이런 <span className="font-bold text-title">활동을</span>{" "}
               하였습니다.
             </p>
           </div>
-          <div className="">
+          <div className="custom:w-full">
             <History />
           </div>
         </section>
