@@ -14,10 +14,10 @@ export default function Home() {
     <section className="flex flex-col items-start">
       <section className="w-full flex flex-col items-center gap-2 items-end relative">
         <article className="flex flex-col pt-20 w-full mx-4">
-          <div className="text-5xl flex flex-col gap-2">
+          <div className="custom:text-5xl text-3xl flex flex-col gap-2">
             <h1 className="font-thin">문제 해결의 길을 걷는</h1>
             <h1>
-              <span className="text-title text-7xl font-bold">
+              <span className="text-title custom:text-7xl text-5xl font-bold">
                 FrontEnd 개발자
               </span>{" "}
               입니다.
