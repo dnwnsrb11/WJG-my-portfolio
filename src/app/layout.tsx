@@ -47,6 +47,10 @@ export default function RootLayout({
             <h1 className="text-[3vw] font-bold text-stroke">
               WJG - FRONTEND DEVELOPER
             </h1>
+            <div className="opacity-30">
+              <p>010-2386-6916</p>
+              <p>dnwnsrb11@naver.com</p>
+            </div>
           </div>
         </footer>
       </body>
