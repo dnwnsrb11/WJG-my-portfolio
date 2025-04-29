@@ -4,7 +4,7 @@ export const AboutMe = () => {
   return (
     <section className="mt-12 pb-16 w-full">
       <div>
-        <section className="flex justify-between items-end mt-4">
+        <section className="flex justify-between items-center custom:items-end mt-4 flex-col custom:flex-row">
           <div className="relative z-10 mb-2">
             <div className="mb-2">
               <p className="text-2xl md:text-3xl font-normal text-gray-400 dark:text-gray-300 opacity-80">
@@ -18,7 +18,7 @@ export const AboutMe = () => {
               </span>
             </h1>
           </div>
-          <h3 className="text-[12vw] leading-none text-gray-800/5 dark:text-white/5 font-extrabold bottom-2 -left-4 z-0 tracking-tighter">
+          <h3 className="custom:text-[12vw] text-[16vw] leading-none text-gray-800/5 dark:text-white/5 font-extrabold bottom-2 -left-4 z-0 tracking-tighter">
             HELLO
           </h3>
         </section>
