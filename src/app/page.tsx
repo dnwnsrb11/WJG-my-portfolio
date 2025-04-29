@@ -40,7 +40,7 @@ export default function Home() {
         </div>
       </section>
       <hr className="w-full border-stroke mb-10" />
-      <article className="mx-6 w-full flex flex-col items-center custom:items-start custom:w-auto">
+      <article className="custom:mx-6 w-full flex flex-col items-center custom:items-start custom:w-auto">
         <div className="mb-1">
           <p className="text-xl font-light text-text2">
             자세한 저의 <span className="font-bold text-title">프로젝트</span>{" "}
