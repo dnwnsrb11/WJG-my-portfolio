@@ -16,7 +16,7 @@ export default function Home() {
         <article className="flex flex-col pt-20 w-full mx-4">
           <div className="custom:text-5xl text-3xl flex flex-col gap-2">
             <h1 className="font-thin">문제 해결의 길을 걷는</h1>
-            <h1>
+            <h1 className="break-keep">
               <span className="text-title custom:text-7xl text-5xl font-bold">
                 FrontEnd 개발자
               </span>{" "}
