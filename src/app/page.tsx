@@ -52,7 +52,7 @@ export default function Home() {
           <ProjectNav />
         </article>
       </section>
-      <section>
+      <section className="w-full">
         <AboutMe />
       </section>
     </section>
