@@ -55,7 +55,32 @@ export const AboutMe = () => {
         </h2>
 
         <div className="grid gap-6 sm:grid-cols-2">
-          
+          {infoData.map((info, index) => {
+            return (
+              <div
+                key={index}
+                className={`bg-background rounded-xl border border-gray-700 shadow-md p-6 
+                hover:shadow-lg transition-all duration-300 transform 
+                `}
+              >
+                <div className="flex items-center mb-3">
+                  <div
+                    className={`p-2 rounded-lg transition-colors duration-300`}
+                  >
+                    {info.icon}
+                  </div>
+                  <p className="ml-3 text-sm text-title font-semibold">
+                    {info.title}
+                  </p>
+                </div>
+                <div className="flex flex-col items-start justify-center gap-1">
+                  <h4 className="text-xl font-medium text-white group-hover:text-[#FF6D38] transition-colors duration-300">
+                    {info.content}
+                  </h4>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
