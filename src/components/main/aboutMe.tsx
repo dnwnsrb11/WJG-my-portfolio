@@ -1,120 +1,32 @@
-import React from "react";
-import {
-  Mail,
-  Phone,
-  GraduationCap,
-  BookOpen,
-  Building2,
-  Copy,
-} from "lucide-react";
+import { History } from "./history";
 
 export const AboutMe = () => {
-  const infoData = [
-    {
-      id: "training",
-      icon: <BookOpen className="w-6 h-6" />,
-      title: "교육",
-      content: "삼성 청년 SW 아카데미",
-      subContent: "(24.07 ~ 25.06)",
-      link: "#",
-      color: "from-emerald-500 to-teal-600",
-      iconBg: "bg-emerald-100 dark:bg-emerald-900/30",
-    },
-    {
-      id: "education",
-      icon: <GraduationCap className="w-6 h-6" />,
-      title: "학력",
-      content: "대구가톨릭대학교 디지털디자인 졸업",
-      subContent: "(2016.03 ~ 2022.03)",
-      color: "from-blue-500 to-indigo-600",
-      iconBg: "bg-blue-100 dark:bg-blue-900/30",
-    },
-    {
-      id: "UX/UI",
-      icon: <Building2 className="w-6 h-6" />,
-      title: "웹디자이너",
-      content: "소통파이브",
-      subContent: "(21.12 ~ 24.01)",
-      link: "#",
-      color: "from-purple-500 to-indigo-600",
-      iconBg: "bg-purple-100 dark:bg-purple-900/30",
-    },
-    {
-      id: "email",
-      icon: <Mail className="w-6 h-6" />,
-      title: "이메일",
-      content: "dnwnsrb11@naver.com",
-      copyable: true,
-      color: "from-red-500 to-orange-600",
-      iconBg: "bg-red-100 dark:bg-red-900/30",
-    },
-    {
-      id: "phone",
-      icon: <Phone className="w-6 h-6" />,
-      title: "전화번호",
-      content: "010-2386-6916",
-      copyable: true,
-      color: "from-amber-500 to-yellow-600",
-      iconBg: "bg-amber-100 dark:bg-amber-900/30",
-    },
-  ];
-
   return (
-    <section className="pt-24 pb-16 custom:mx-6">
-      <div className="max-w-4xl mx-auto relative">
-        <h2 className="text-5xl font-bold mb-16 text-white relative inline-block">
-          About Me
-          <span className="absolute left-0 -bottom-3 w-20 h-1 bg-gradient-to-r from-red-500 to-orange-600 rounded-full"></span>
-        </h2>
-
-        <div className="grid gap-8 sm:grid-cols-2">
-          {infoData.map((info, index) => (
-            <div
-              key={index}
-              className="bg-white dark:bg-gray-800/60 backdrop-blur-sm rounded-xl border border-gray-200 dark:border-gray-700 p-6 
-                group hover:scale-105 transition-all duration-300 shadow-md hover:shadow-xl relative overflow-hidden"
-            >
-              <div
-                className={`absolute inset-0 bg-gradient-to-br ${info.color} opacity-0 group-hover:opacity-5 transition-opacity duration-300`}
-              ></div>
-
-              <div className="flex items-center mb-4">
-                <div
-                  className={`p-3 rounded-xl ${info.iconBg} text-white 
-                  group-hover:bg-gradient-to-br ${info.color} group-hover:text-white transition-all duration-300`}
-                >
-                  {info.icon}
-                </div>
-                <p
-                  className={`ml-4 text-sm font-semibold uppercase tracking-wider text-gray-400
-                  group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r ${info.color} transition-all duration-300`}
-                >
-                  {info.title}
-                </p>
-              </div>
-
-              <div className="flex flex-col items-start justify-center gap-1">
-                <h4
-                  className="text-xl font-medium text-white 
-                  group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r 
-                  group-hover:from-red-400 group-hover:to-orange-600 transition-all duration-300"
-                >
-                  {info.content}
-                </h4>
-
-                {info.subContent && (
-                  <p className="text-gray-400 text-sm">
-                    {info.subContent}
-                  </p>
-                )}
-              </div>
-              <div
-                className={`absolute bottom-0 left-0 h-1 w-0 group-hover:w-full 
-                rounded-b-xl bg-gradient-to-r ${info.color} transition-all duration-300`}
-              ></div>
+    <section className="pt-24 pb-16 w-full">
+      <div>
+        <section className="flex justify-between items-end mt-4">
+          <div className="relative z-10 mb-2">
+            <div className="mb-4">
+              <p className="text-2xl md:text-3xl font-normal text-gray-400 dark:text-gray-300 opacity-80">
+                안녕하세요 저는
+              </p>
             </div>
-          ))}
-        </div>
+            <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-white to-gray-300 dark:from-white dark:to-gray-400 text-transparent bg-clip-text">
+              우준규
+              <span className="text-2xl md:text-3xl font-normal ml-2 text-gray-400 dark:text-gray-300">
+                입니다.
+              </span>
+            </h1>
+            <div className="h-1 w-24 bg-gradient-to-r from-red-500 to-orange-600 rounded-full mt-4"></div>
+          </div>
+          <h3 className="text-[12vw] leading-none text-gray-800/5 dark:text-white/5 font-extrabold bottom-2 -left-4 z-0 tracking-tighter">
+            HELLO
+          </h3>
+        </section>
+
+        <section>
+          <History />
+        </section>
       </div>
     </section>
   );
