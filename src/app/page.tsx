@@ -23,7 +23,7 @@ export default function Home() {
               입니다.
             </h1>
           </div>
-          <p className="text-gray-400 max-w-2xl mt-2 mb-6 text-lg font-medium leading-relaxed opacity-90">
+          <p className="text-gray-400 max-w-2xl mt-2 mb-6 text-lg font-medium leading-relaxed opacity-90 break-keep">
             창의적인 문제 해결과 직관적인 사용자 경험을 만드는 데 열정을 가진
             <span className="text-title"> 프론트엔드 개발자입니다.</span> UX/UI
             전문가로서, 사용자 경험을 최우선으로 고려하며, 렌더링 최적화와
