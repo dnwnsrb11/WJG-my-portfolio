@@ -63,7 +63,7 @@ export const History = () => {
         {infoData.map((info, index) => (
           <div
             key={index}
-            className="bg-white flex-1 dark:bg-gray-800/60 backdrop-blur-sm rounded-xl border border-gray-700 p-3
+            className="bg-background bg-opacity-20 flex-1 backdrop-blur-sm rounded-xl border border-gray-700 p-3
                 group hover:scale-105 transition-all duration-300 shadow-md hover:shadow-xl relative overflow-hidden"
           >
             <div
