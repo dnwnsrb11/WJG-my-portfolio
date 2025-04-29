@@ -1,3 +1,4 @@
+import { AboutMe } from "@/components/main/aboutMe";
 import { ProjectNav } from "@/components/main/projectNav";
 
 import dynamic from "next/dynamic";
@@ -40,17 +41,20 @@ export default function Home() {
         </div>
       </section>
       <hr className="w-full border-stroke mb-10" />
-      <article className="custom:mx-6 w-full flex flex-col items-center custom:items-start custom:w-auto">
+      <section className="custom:mx-6 w-full flex flex-col items-center custom:items-start custom:w-auto">
         <div className="mb-1">
           <p className="text-xl font-light text-text2">
             자세한 저의 <span className="font-bold text-title">프로젝트</span>{" "}
             확인이 가능합니다.
           </p>
         </div>
-        <div>
+        <article>
           <ProjectNav />
-        </div>
-      </article>
+        </article>
+      </section>
+      <section>
+        <AboutMe />
+      </section>
     </section>
   );
 }
