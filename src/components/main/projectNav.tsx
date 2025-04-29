@@ -25,7 +25,7 @@ export const ProjectNav = () => {
 
   return (
     <section className="w-full py-6 rounded-2xl">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 custom:grid-cols-3 gap-4">
         {links.map((link) => (
           <a
             key={link.id}
