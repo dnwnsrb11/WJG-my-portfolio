@@ -24,7 +24,7 @@ export const ProjectNav = () => {
   ];
 
   return (
-    <section className="w-full py-6 rounded-2xl">
+    <section className="py-6">
       <div className="grid grid-cols-1 custom:grid-cols-3 gap-4">
         {links.map((link) => (
           <a
@@ -34,7 +34,7 @@ export const ProjectNav = () => {
             rel="noopener noreferrer"
             className="relative bg-gray-800/50 border border-gray-700 rounded-xl overflow-hidden transition-all duration-300 hover:border-[#FF6D38] group"
           >
-            <div className="relative z-10 p-5 gap-5 flex items-center text-center justify-center">
+            <div className="relative z-10 p-5 gap-5 flex justify-start items-center">
               <div className="w-16 h-16 rounded-lg overflow-hidden border-gray-700 group-hover:border-[#FF6D38] transition-all duration-300">
                 <img
                   src={link.icon}

@@ -13,7 +13,7 @@ module.exports = {
         stroke: "#393939",
       },
       screens: {
-        custom: "1130px", // <= 여기에 추가
+        custom: "1130px", 
       },
     },
   },

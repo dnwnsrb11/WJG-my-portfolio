@@ -47,7 +47,7 @@ export default function Home() {
             확인이 가능합니다.
           </p>
         </div>
-        <div className="w-full">
+        <div>
           <ProjectNav />
         </div>
       </article>
