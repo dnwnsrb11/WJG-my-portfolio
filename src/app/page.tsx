@@ -40,7 +40,7 @@ export default function Home() {
         </div>
       </section>
       <hr className="w-full border-stroke mb-10" />
-      <article className="mx-6">
+      <article className="mx-6 bordre">
         <div>
           <p className="text-xl font-light text-text2">
             자세한 저의 <span className="font-bold text-title">프로젝트</span>{" "}
