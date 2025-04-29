@@ -15,7 +15,7 @@ export const History = () => {
       title: "교육",
       content: "삼성 청년 SW 아카데미",
       subContent: "(24.07 ~ 25.06)",
-      link: "#",
+      link: "https://www.ssafy.com/ksp/jsp/swp/swpMain.jsp",
       color: "from-emerald-500 to-teal-600",
       iconBg: "bg-emerald-100 dark:bg-emerald-900/30",
     },
@@ -25,7 +25,7 @@ export const History = () => {
       title: "웹디자이너",
       content: "소통파이브",
       subContent: "(21.12 ~ 24.01)",
-      link: "#",
+      link: "https://sotongfive.kr/",
       color: "from-purple-500 to-indigo-600",
       iconBg: "bg-purple-100 dark:bg-purple-900/30",
     },
@@ -61,8 +61,11 @@ export const History = () => {
     <section>
       <div className="flex flex-wrap flex-grow gap-4 pt-6">
         {infoData.map((info, index) => (
-          <div
+          <a
             key={index}
+            href={info.link}
+            target="_blank"
+            rel="noopener noreferrer" 
             className="bg-background bg-opacity-20 flex-1 backdrop-blur-sm rounded-xl border border-gray-700 p-3
                 group hover:scale-105 transition-all duration-300 shadow-md hover:shadow-xl relative overflow-hidden"
           >
@@ -102,7 +105,7 @@ export const History = () => {
               className={`absolute bottom-0 left-0 h-1 w-0 group-hover:w-full 
                 rounded-b-xl bg-gradient-to-r ${info.color} transition-all duration-300`}
             ></div>
-          </div>
+          </a>
         ))}
       </div>
     </section>
