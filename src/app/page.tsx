@@ -12,7 +12,7 @@ const WalkAnimation = dynamic(
 export default function Home() {
   return (
     <section className="flex flex-col items-start">
-      <section className="w-full flex gap-2 items-end relative">
+      <section className="w-full flex flex-col items-center gap-2 items-end relative">
         <article className="flex flex-col pt-20 w-full mx-4">
           <div className="text-5xl flex flex-col gap-2">
             <h1 className="font-thin">문제 해결의 길을 걷는</h1>
@@ -31,7 +31,7 @@ export default function Home() {
           </p>
         </article>
         <div
-          className={`absolute right-0 -bottom-9 transition-all duration-1000 delay-300 transform`}
+          className={`right-0 -bottom-9 transition-all duration-1000 delay-300 transform lg:absolute static`}
         >
           <div className="relative">
             <div className="absolute -inset-4 bg-gradient-to-r from-orange-500 to-[#FF6D38 / 30] rounded-full opacity-20 blur-xl"></div>
