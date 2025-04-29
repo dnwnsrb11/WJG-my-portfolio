@@ -30,7 +30,7 @@ export const AboutMe = () => {
               하였습니다.
             </p>
           </div>
-          <div className="custom:w-full">
+          <div className="w-full">
             <History />
           </div>
         </section>

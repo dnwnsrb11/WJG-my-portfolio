@@ -24,7 +24,7 @@ export const ProjectNav = () => {
   ];
 
   return (
-    <section className="py-6">
+    <section className="py-6 px-6 custom:px-0">
       <div className="grid grid-cols-1 custom:grid-cols-3 gap-4">
         {links.map((link) => (
           <a
