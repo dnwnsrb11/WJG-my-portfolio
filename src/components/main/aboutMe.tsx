@@ -62,7 +62,7 @@ export const AboutMe = () => {
   return (
     <section className="pt-24 pb-16 custom:mx-6">
       <div className="max-w-4xl mx-auto relative">
-        <h2 className="text-5xl font-bold mb-16 text-gray-900 dark:text-white relative inline-block">
+        <h2 className="text-5xl font-bold mb-16 text-white relative inline-block">
           About Me
           <span className="absolute left-0 -bottom-3 w-20 h-1 bg-gradient-to-r from-red-500 to-orange-600 rounded-full"></span>
         </h2>
@@ -74,20 +74,19 @@ export const AboutMe = () => {
               className="bg-white dark:bg-gray-800/60 backdrop-blur-sm rounded-xl border border-gray-200 dark:border-gray-700 p-6 
                 group hover:scale-105 transition-all duration-300 shadow-md hover:shadow-xl relative overflow-hidden"
             >
-              {/* 호버 시 나타나는 배경 효과 */}
               <div
                 className={`absolute inset-0 bg-gradient-to-br ${info.color} opacity-0 group-hover:opacity-5 transition-opacity duration-300`}
               ></div>
 
               <div className="flex items-center mb-4">
                 <div
-                  className={`p-3 rounded-xl ${info.iconBg} text-gray-800 dark:text-white 
+                  className={`p-3 rounded-xl ${info.iconBg} text-white 
                   group-hover:bg-gradient-to-br ${info.color} group-hover:text-white transition-all duration-300`}
                 >
                   {info.icon}
                 </div>
                 <p
-                  className={`ml-4 text-sm font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400
+                  className={`ml-4 text-sm font-semibold uppercase tracking-wider text-gray-400
                   group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r ${info.color} transition-all duration-300`}
                 >
                   {info.title}
@@ -96,21 +95,19 @@ export const AboutMe = () => {
 
               <div className="flex flex-col items-start justify-center gap-1">
                 <h4
-                  className="text-xl font-medium text-gray-800 dark:text-white 
+                  className="text-xl font-medium text-white 
                   group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r 
-                  group-hover:from-indigo-400 group-hover:to-purple-600 transition-all duration-300"
+                  group-hover:from-red-400 group-hover:to-orange-600 transition-all duration-300"
                 >
                   {info.content}
                 </h4>
 
                 {info.subContent && (
-                  <p className="text-gray-500 dark:text-gray-400 text-sm">
+                  <p className="text-gray-400 text-sm">
                     {info.subContent}
                   </p>
                 )}
               </div>
-
-              {/* 카드 하단 강조선 */}
               <div
                 className={`absolute bottom-0 left-0 h-1 w-0 group-hover:w-full 
                 rounded-b-xl bg-gradient-to-r ${info.color} transition-all duration-300`}
