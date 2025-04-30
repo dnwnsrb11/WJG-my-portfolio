@@ -17,7 +17,7 @@ export const History = () => {
       subContent: "(24.07 ~ 25.06)",
       link: "https://www.ssafy.com/ksp/jsp/swp/swpMain.jsp",
       color: "from-emerald-500 to-teal-600",
-      iconBg: "bg-emerald-100 dark:bg-emerald-900/30",
+      iconBg: "bg-emerald-900/30",
     },
     {
       id: "UX/UI",
@@ -27,7 +27,7 @@ export const History = () => {
       subContent: "(21.12 ~ 24.01)",
       link: "https://sotongfive.kr/",
       color: "from-purple-500 to-indigo-600",
-      iconBg: "bg-purple-100 dark:bg-purple-900/30",
+      iconBg: "bg-purple-900/30",
     },
     {
       id: "education",
@@ -36,7 +36,7 @@ export const History = () => {
       content: "대구가톨릭대학교 디지털디자인 졸업",
       subContent: "(16.03 ~ 22.03)",
       color: "from-blue-500 to-indigo-600",
-      iconBg: "bg-blue-100 dark:bg-blue-900/30",
+      iconBg: "bg-blue-900/30",
     },
   ];
   return (
@@ -57,7 +57,7 @@ export const History = () => {
 
             <div className="flex items-center mb-4">
               <div
-                className={`p-3 rounded-xl ${info.iconBg} text-white 
+                className={`p-3 rounded-xl ${info.iconBg} text-white
                   group-hover:bg-gradient-to-br ${info.color} group-hover:text-white transition-all duration-300`}
               >
                 {info.icon}
@@ -72,8 +72,8 @@ export const History = () => {
 
             <div className="flex flex-col items-start justify-center gap-1">
               <h4
-                className="text-xl font-medium text-white 
-                  group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r 
+                className="text-xl font-medium text-white
+                  group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r
                   group-hover:from-red-400 group-hover:to-orange-600 transition-all duration-300"
               >
                 {info.content}
@@ -84,7 +84,7 @@ export const History = () => {
               )}
             </div>
             <div
-              className={`absolute bottom-0 left-0 h-1 w-0 group-hover:w-full 
+              className={`absolute bottom-0 left-0 h-1 w-0 group-hover:w-full
                 rounded-b-xl bg-gradient-to-r ${info.color} transition-all duration-300`}
             ></div>
           </a>
