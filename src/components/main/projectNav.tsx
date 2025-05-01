@@ -51,7 +51,7 @@ export const ProjectNav = () => {
                   {link.description}
                 </p>
               </div>
-              <div className="opacity-0 xl:group-hover:opacity-100 transform translate-x-3 group-hover:translate-x-0 transition-all duration-300">
+              <div className="opacity-0 xl:group-hover:opacity-100 transform -translate-x-3 group-hover:translate-x-1 transition-all duration-300">
                 <span className="text-sm text-[#FF6D38] flex items-center justify-center">
                   방문하기
                   <svg
