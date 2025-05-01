@@ -18,7 +18,7 @@ export default function Home() {
         <article className="flex flex-col pt-20 w-full mx-4">
           <div className="custom:text-5xl text-3xl flex flex-col gap-2">
             <h1 className="font-thin">문제 해결의 길을 걷는</h1>
-            <div className="break-keep flex items-end">
+            <div className="break-keep flex items-start custom:flex-row flex-col custom:items-end">
               <TextGenerateEffect words="FrontEnd 개발자 " className="text-white text-5xl" /> <p>입니다.</p>
             </div>
           </div>
