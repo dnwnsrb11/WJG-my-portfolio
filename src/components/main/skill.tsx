@@ -13,7 +13,7 @@ export const Skill = () => {
       title: "Next.js",
       subtitle: "React 생태계 기반 프레임워크",
       description: "SSR, SSG, ISR 등 다양한 렌더링 방식 지원을 통해 성능 최적화와 SEO에 강점을 가지며, 효율적인 페이지 개발이 가능합니다.",
-      tags: ["SSR", "SSG", ],
+      tags: ["SSR", "SSG"],
     },
 
     {
@@ -61,15 +61,12 @@ export const Skill = () => {
       </h2>
       <div className="grid grid-cols-1 custom:grid-cols-3 gap-4">
         {skills.map((skill, index) => (
-          <div key={index} className=" rounded-xl overflow-hidden shadow-lg border border-gray-700 hover:shadow-xl hover:scale-[1.02] transition-all duration-300">
+          <div key={index} className=" rounded-xl overflow-hidden shadow-lg border border-gray-700 hover:shadow-xl hover:scale-[1.01] hover:border-title transition-all duration-300">
             <div className="p-6 flex flex-col h-full">
-              {/* 타이틀과 아이콘 */}
               <div className="flex items-center gap-2 mb-2">
-                {/* {iconMap[skill.title] ?? <Code2 className="w-5 h-5 text-indigo-400" />} */}
                 <h3 className="text-xl font-semibold text-white">{skill.title}</h3>
               </div>
 
-              {/* 서브타이틀 */}
               <p className="text-sm text-title mb-2">{skill.subtitle}</p>
 
               {/* 설명 */}
