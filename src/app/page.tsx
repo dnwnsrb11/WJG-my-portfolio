@@ -45,7 +45,7 @@ export default function Home() {
           <ProjectNav />
         </article>
       </section>
-      <section className="w-full">
+      <section className="w-full mt-12">
         <AboutMe />
       </section>
     </section>
