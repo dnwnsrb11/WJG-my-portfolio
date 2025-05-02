@@ -20,7 +20,7 @@ export const AboutMeModdal = () => {
         <AlertDialogTrigger asChild>
           <Button variant="outline2">전체 확인</Button>
         </AlertDialogTrigger>
-        <AlertDialogContent>
+        <AlertDialogContent className="max-h-[80vh] overflow-y-auto">
           {aboutMe.map((item, index) => (
             <AlertDialogHeader key={index}>
               <AlertDialogTitle>{item.title}</AlertDialogTitle>
