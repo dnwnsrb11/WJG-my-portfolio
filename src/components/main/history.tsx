@@ -1,11 +1,4 @@
-import {
-  Mail,
-  Phone,
-  GraduationCap,
-  BookOpen,
-  Building2,
-  Copy,
-} from "lucide-react";
+import { Mail, Phone, GraduationCap, BookOpen, Building2, Copy } from "lucide-react";
 
 export const History = () => {
   const infoData = [
@@ -41,7 +34,7 @@ export const History = () => {
   ];
   return (
     <section>
-      <div className="flex flex-col gap-4 pt-6 custom:flex-row">
+      <div className="flex flex-col gap-4 custom:flex-row">
         {infoData.map((info, index) => (
           <a
             key={index}
@@ -51,9 +44,7 @@ export const History = () => {
             className="bg-background bg-opacity-20 flex-1 backdrop-blur-sm rounded-xl border border-gray-700 p-3
                 group custom:hover:scale-105 transition-all duration-300 shadow-md hover:shadow-xl relative overflow-hidden"
           >
-            <div
-              className={`absolute inset-0 bg-gradient-to-br ${info.color} opacity-0 group-hover:opacity-5 transition-opacity duration-300`}
-            ></div>
+            <div className={`absolute inset-0 bg-gradient-to-br ${info.color} opacity-0 group-hover:opacity-5 transition-opacity duration-300`}></div>
 
             <div className="flex items-center mb-4">
               <div
@@ -79,9 +70,7 @@ export const History = () => {
                 {info.content}
               </h4>
 
-              {info.subContent && (
-                <p className="text-gray-400 text-sm">{info.subContent}</p>
-              )}
+              {info.subContent && <p className="text-gray-400 text-sm">{info.subContent}</p>}
             </div>
             <div
               className={`absolute bottom-0 left-0 h-1 w-0 group-hover:w-full
@@ -95,20 +84,20 @@ export const History = () => {
 };
 
 // {
-    //   id: "email",
-    //   icon: <Mail className="w-6 h-6" />,
-    //   title: "이메일",
-    //   content: "dnwnsrb11@naver.com",
-    //   copyable: true,
-    //   color: "from-red-500 to-orange-600",
-    //   iconBg: "bg-red-100 dark:bg-red-900/30",
-    // },
-    // {
-    //   id: "phone",
-    //   icon: <Phone className="w-6 h-6" />,
-    //   title: "전화번호",
-    //   content: "010-2386-6916",
-    //   copyable: true,
-    //   color: "from-amber-500 to-yellow-600",
-    //   iconBg: "bg-amber-100 dark:bg-amber-900/30",
-    // },
+//   id: "email",
+//   icon: <Mail className="w-6 h-6" />,
+//   title: "이메일",
+//   content: "dnwnsrb11@naver.com",
+//   copyable: true,
+//   color: "from-red-500 to-orange-600",
+//   iconBg: "bg-red-100 dark:bg-red-900/30",
+// },
+// {
+//   id: "phone",
+//   icon: <Phone className="w-6 h-6" />,
+//   title: "전화번호",
+//   content: "010-2386-6916",
+//   copyable: true,
+//   color: "from-amber-500 to-yellow-600",
+//   iconBg: "bg-amber-100 dark:bg-amber-900/30",
+// },
