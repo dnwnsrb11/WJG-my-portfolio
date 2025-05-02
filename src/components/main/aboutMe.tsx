@@ -1,6 +1,8 @@
+import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 import { History } from "./history";
 import Skill from "./skill";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
+import { AboutMeText } from "@/components/main/aboutMeText";
 
 export const AboutMe = () => {
   return (
@@ -17,6 +19,10 @@ export const AboutMe = () => {
               <span className="text-2xl md:text-3xl font-normal ml-2 text-gray-400 transition-all duration-300">입니다.</span>
             </div>
           </div>
+        </section>
+        {/* 나에 대한 소개  */}
+        <section>
+          <AboutMeText />
         </section>
 
         {/* Divider with Animation */}
