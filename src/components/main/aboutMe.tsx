@@ -11,7 +11,7 @@ export const AboutMe = () => {
       <div className="relative">
         {/* Header Section with Animation */}
         <section className="flex flex-col custom:flex-row justify-between items-center custom:items-end mt-4 relative">
-          <div className="relative z-10 mb-2">
+          <div className="relative z-10 mb-2 flex flex-col items-center custom:items-start">
             <div className="mb-2 transition-all duration-300 hover:translate-y-1">
               <p className="text-2xl md:text-3xl font-normal text-gray-400 opacity-80 tracking-wide">안녕하세요</p>
             </div>
