@@ -4,31 +4,40 @@ import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 
 export const AboutMe = () => {
   return (
-    <section className="mt-12 pb-16 w-full">
-      <div>
-        <section className="flex justify-between items-center custom:items-end mt-4 flex-col custom:flex-row">
+    <section className="w-full py-4 px-6 border border-gray-700 rounded-2xl">
+      <div className="relative">
+        {/* Header Section with Animation */}
+        <section className="flex flex-col custom:flex-row justify-between items-center custom:items-end mt-4 relative">
           <div className="relative z-10 mb-2">
-            <div className="mb-2">
-              <p className="text-2xl md:text-3xl font-normal text-gray-400 dark:text-gray-300 opacity-80">안녕하세요</p>
+            <div className="mb-2 transition-all duration-300 hover:translate-y-1">
+              <p className="text-2xl md:text-3xl font-normal text-gray-400 opacity-80 tracking-wide">안녕하세요</p>
             </div>
-            <div className="flex items-end">
-              <TextGenerateEffect words="우준규 " className="text-white text-5xl" />
-              <span className="text-2xl md:text-3xl font-normal ml-2 text-gray-400 dark:text-gray-300">입니다.</span>
+            <div className="flex items-end group">
+              <TextGenerateEffect words="우준규 " className="text-5xl font-bold text-white transition-all duration-300 group-hover:text-primary" />
+              <span className="text-2xl md:text-3xl font-normal ml-2 text-gray-400 transition-all duration-300">입니다.</span>
             </div>
           </div>
-          <h3 className="custom:text-[12vw] text-[16vw] leading-none text-gray-800/5 dark:text-white/5 font-extrabold bottom-2 -left-4 z-0 tracking-tighter">HELLO</h3>
+          <h3 className="custom:text-[12vw] text-[16vw] leading-none text-gray-800/5 font-extrabold absolute bottom-0 -z-10 tracking-tighter select-none">HELLO</h3>
         </section>
-        <hr className="w-full border-stroke mb-10" />
-        <section className="flex flex-col mx-6 items-center custom:items-start">
-          <div className="mb-1">
-            <p className="text-xl font-light text-text2">
-              저는 이런 <span className="font-bold text-title">활동을</span> 하였습니다.
+
+        {/* Divider with Animation */}
+        <hr className="w-full border-gray-700 my-10 transition-all duration-300 hover:border-primary" />
+
+        {/* Content Section */}
+        <section className="flex flex-col space-y-6">
+          <div className="transform transition-all duration-300 hover:translate-x-2">
+            <p className="text-xl font-light text-gray-400">
+              저는 이런 <span className="font-bold text-white">활동을</span> 하였습니다.
             </p>
           </div>
-          <div className="w-full">
+
+          {/* History Section with Animation */}
+          <div className="w-full transition-all duration-500 hover:shadow-lg hover:shadow-gray-800/20 rounded-lg">
             <History />
           </div>
-          <div className="w-full">
+
+          {/* Skills Section with Animation */}
+          <div className="w-full p-6 border border-gray-700 rounded-2xl mt-4 bg-gray-900/30 backdrop-blur-sm transition-all duration-300 hover:border-gray-500 hover:shadow-xl hover:shadow-gray-800/10">
             <Skill />
           </div>
         </section>
