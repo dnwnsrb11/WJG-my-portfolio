@@ -17,7 +17,6 @@ export const AboutMe = () => {
               <span className="text-2xl md:text-3xl font-normal ml-2 text-gray-400 transition-all duration-300">입니다.</span>
             </div>
           </div>
-          <h3 className="custom:text-[12vw] text-[16vw] leading-none text-gray-800/5 font-extrabold absolute bottom-0 -z-10 tracking-tighter select-none">HELLO</h3>
         </section>
 
         {/* Divider with Animation */}
