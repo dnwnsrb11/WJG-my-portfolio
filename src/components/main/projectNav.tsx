@@ -1,7 +1,7 @@
 export const ProjectNav = () => {
   const links = [
     {
-      id: "Velog",
+      id: "velog",
       name: "Velog",
       icon: "/img/velog.jpg",
       url: "https://velog.io/@dnwnsrb11/posts",
