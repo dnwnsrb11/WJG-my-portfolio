@@ -26,7 +26,7 @@ export const Project = () => {
       title: "BDL",
       description: "주린이를 위한 주식 입문 서비스 ",
       tags: ["React", "Tailwind CSS", "EChart", "React Query", "TypeScript"],
-      notionLink: "https://www.notion.so/your-project-link-1",
+      notionLink: "https://indigo-sprite-bd5.notion.site/BDL-1ea4ba04719a80609f4aea2164ca50be",
       thumbnail: BDLimg,
       position: "FrontEnd",
     },
