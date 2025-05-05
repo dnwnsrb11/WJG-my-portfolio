@@ -13,7 +13,7 @@ export const AboutMe = () => {
         <section className="flex flex-col custom:flex-row items-center custom:items-end mt-4 gap-4 relative">
           <div className="relative z-10 flex flex-col items-center custom:items-start">
             <div className="mb-2 transition-all duration-300 hover:translate-y-1">
-              <p className="text-2xl md:text-3xl font-normal text-gray-400 opacity-80 tracking-wide">안녕하세요</p>
+              <p className="text-2xl md:text-3xl font-normal text-gray-400 opacity-80 tracking-wide">안녕하세요 제 이름은</p>
             </div>
             <div className="flex items-end group">
               <TextGenerateEffect words="우준규 " className="text-5xl font-bold text-white transition-all duration-300 group-hover:text-primary" />
