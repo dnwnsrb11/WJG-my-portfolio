@@ -6,19 +6,19 @@ const awards = [
     type: "특화프로젝트",
     prize: "우수상",
     project: "BDL",
-    img: "https://wjg-my-portfolio.vercel.app/img/BDL.gif",
+    img: "https://wjg-my-portfolio.vercel.app/img/BDL.png",
   },
   {
     type: "공통프로젝트",
     prize: "최우수상",
     project: "그림톡",
-    img: "https://wjg-my-portfolio.vercel.app/img/GrimTalk.gif",
+    img: "https://wjg-my-portfolio.vercel.app/img/GrimTalk.png",
   },
   {
     type: "관통프로젝트",
     prize: "우수상",
     project: "MOODFLEX",
-    img: "https://wjg-my-portfolio.vercel.app/img/MoodFlex.gif",
+    img: "https://wjg-my-portfolio.vercel.app/img/MoodFlex.png",
   },
 ];
 
