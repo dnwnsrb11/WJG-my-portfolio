@@ -23,11 +23,13 @@ export const AboutMeModdal = () => {
         <AlertDialogContent className="max-h-[80vh] overflow-y-auto">
           {aboutMe.map((item, index) => (
             <AlertDialogHeader key={index}>
-              <AlertDialogTitle>{item.title}</AlertDialogTitle>
+              <AlertDialogTitle>
+                <div className="break-keep text-2xl">{item.title}</div>
+                <div className="opacity-60 text-sm text-gray-400">{item.name}</div>
+              </AlertDialogTitle>
               <AlertDialogDescription>
-                <div className="break-keep mb-2">{item.quote}</div>
+                <div className="break-keep mb-2 text-xl text-gray-200">{item.quote}</div>
               </AlertDialogDescription>
-              <div className="opacity-60 text-sm">{item.name}</div>
             </AlertDialogHeader>
           ))}
           <AlertDialogFooter>
