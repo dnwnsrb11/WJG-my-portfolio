@@ -4,7 +4,8 @@ import Skill from "./skill";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import { AboutMeText } from "@/components/main/aboutMeText";
 import { AboutMeModdal } from "@/components/main/aboutMeModdal";
-import { Award } from "lucide-react";
+import { Award } from "./award";
+
 
 export const AboutMe = () => {
   return (
