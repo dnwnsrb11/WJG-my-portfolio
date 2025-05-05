@@ -3,19 +3,19 @@ import { LinkPreview } from "../ui/link-preview";
 
 const awards = [
   {
-    type: "특화프로젝트",
+    type: "SSAFY 특화프로젝트",
     prize: "우수상",
     project: "BDL",
     img: "https://wjg-my-portfolio.vercel.app/img/BDL.png",
   },
   {
-    type: "공통프로젝트",
+    type: "SSAFY 공통프로젝트",
     prize: "최우수상",
     project: "그림톡",
     img: "https://wjg-my-portfolio.vercel.app/img/GrimTalk.png",
   },
   {
-    type: "관통프로젝트",
+    type: "SSAFY 관통프로젝트",
     prize: "우수상",
     project: "MOODFLEX",
     img: "https://wjg-my-portfolio.vercel.app/img/MoodFlex.png",
@@ -39,12 +39,10 @@ export const Award = () => {
             <p className="font-medium">{award.type}</p>
             <p className="text-gray-600 ">
               <span className="font-semibold text-white text-xl">
-                {award.prize}
-                <LinkPreview url={award.img} className="font-bold">
-                  Tailwind CSS
+                <LinkPreview url={award.img} className="text-white">
+                  {award.prize} - {award.project}
                 </LinkPreview>{" "}
               </span>{" "}
-              - {award.project}
             </p>
           </li>
         ))}
