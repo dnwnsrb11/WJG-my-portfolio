@@ -46,7 +46,7 @@ export const AboutMe = () => {
           </div>
 
           {/* Skills Section with Animation */}
-          <div className="w-full p-6 border border-gray-700 rounded-2xl mt-4 backdrop-blur-sm transition-all duration-300 hover:border-gray-500 hover:shadow-xl hover:shadow-gray-800/10">
+          <div className="w-full p-0 custom:p-6 border border-opacity-0 custom:border-opacity-100 border-gray-700 rounded-2xl mt-4 backdrop-blur-sm transition-all duration-300 hover:border-gray-500 hover:shadow-xl hover:shadow-gray-800/10">
             <Skill />
           </div>
         </section>
