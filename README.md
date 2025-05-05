@@ -1,5 +1,6 @@
 # 🧑‍💻 Portfolio – Woo Jungyu
-(WJG-Portfolio)[https://wjg-my-portfolio.vercel.app/]
+https://wjg-my-portfolio.vercel.app/
+
 Next.js 기반으로 만든 프론트엔드 개발자 우준규의 포트폴리오 사이트입니다.  
 프로젝트, 기술 스택, 이력 등을 소개하며, 반응형으로 작업되어 있습니다.
 
