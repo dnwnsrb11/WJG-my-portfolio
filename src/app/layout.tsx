@@ -42,7 +42,7 @@ export default function RootLayout({
           <NavBar />
         </header>
         <main className="pt-24 flex-grow max-w-[1920px] custom:mx-auto">{children}</main>
-        <footer className="mt-auto border-t w-full border-stroke">
+        <footer className="mt-auto border-t w-full border-stroke py-10">
           <div className="text-center">
             <h1 className="text-[3vw] font-bold text-stroke">WJG - FRONTEND DEVELOPER</h1>
             <div className="opacity-30">
