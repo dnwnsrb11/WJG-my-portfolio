@@ -18,7 +18,7 @@ export const AboutMeModdal = () => {
     <article>
       <AlertDialog>
         <AlertDialogTrigger asChild>
-          <Button variant="outline2">전체 확인</Button>
+          <Button variant="outline2">저는 이런 사람 입니다.</Button>
         </AlertDialogTrigger>
         <AlertDialogContent className="max-h-[80vh] overflow-y-auto">
           {aboutMe.map((item, index) => (

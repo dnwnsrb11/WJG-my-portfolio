@@ -7,11 +7,11 @@ import { AboutMeModdal } from "@/components/main/aboutMeModdal";
 
 export const AboutMe = () => {
   return (
-    <section className="w-full py-4 px-6 border border-gray-700 rounded-2xl">
+    <section className="w-full py-4 px-6 border-t border-gray-700 ">
       <div className="relative">
         {/* Header Section with Animation */}
-        <section className="flex flex-col custom:flex-row justify-between items-center custom:items-end mt-4 relative">
-          <div className="relative z-10 mb-2 flex flex-col items-center custom:items-start">
+        <section className="flex flex-col custom:flex-row items-center custom:items-end mt-4 gap-4 relative">
+          <div className="relative z-10 flex flex-col items-center custom:items-start">
             <div className="mb-2 transition-all duration-300 hover:translate-y-1">
               <p className="text-2xl md:text-3xl font-normal text-gray-400 opacity-80 tracking-wide">안녕하세요</p>
             </div>
@@ -46,7 +46,7 @@ export const AboutMe = () => {
           </div>
 
           {/* Skills Section with Animation */}
-          <div className="w-full p-6 border border-gray-700 rounded-2xl mt-4 bg-gray-900/30 backdrop-blur-sm transition-all duration-300 hover:border-gray-500 hover:shadow-xl hover:shadow-gray-800/10">
+          <div className="w-full p-6 border border-gray-700 rounded-2xl mt-4 backdrop-blur-sm transition-all duration-300 hover:border-gray-500 hover:shadow-xl hover:shadow-gray-800/10">
             <Skill />
           </div>
         </section>
