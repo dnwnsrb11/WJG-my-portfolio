@@ -1,5 +1,6 @@
 import { AboutMe } from "@/components/main/aboutMe";
 import { ProjectNav } from "@/components/main/projectNav";
+import { Project } from "@/components/project/Project";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 
 import dynamic from "next/dynamic";
@@ -47,6 +48,9 @@ export default function Home() {
       </section>
       <section className="w-full mt-20" id="about">
         <AboutMe />
+      </section>
+      <section className="w-full mt-20" id="project">
+        <Project />
       </section>
     </section>
   );
