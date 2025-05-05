@@ -1,20 +1,24 @@
 import { Trophy } from "lucide-react";
+import { LinkPreview } from "../ui/link-preview";
 
 const awards = [
   {
     type: "특화프로젝트",
     prize: "우수상",
     project: "BDL",
+    img: "https://wjg-my-portfolio.vercel.app/img/BDL.gif",
   },
   {
     type: "공통프로젝트",
     prize: "최우수상",
     project: "그림톡",
+    img: "https://wjg-my-portfolio.vercel.app/img/GrimTalk.gif",
   },
   {
     type: "관통프로젝트",
     prize: "우수상",
     project: "MOODFLEX",
+    img: "https://wjg-my-portfolio.vercel.app/img/MoodFlex.gif",
   },
 ];
 
@@ -36,6 +40,9 @@ export const Award = () => {
             <p className="text-gray-600 ">
               <span className="font-semibold text-white text-xl">
                 {award.prize}
+                <LinkPreview url={award.img} className="font-bold">
+                  Tailwind CSS
+                </LinkPreview>{" "}
               </span>{" "}
               - {award.project}
             </p>
