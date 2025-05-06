@@ -63,6 +63,7 @@ module.exports = {
         },
       },
       screens: {
+        maxScreens: "1920px",
         custom: "1130px",
       },
       borderRadius: {
