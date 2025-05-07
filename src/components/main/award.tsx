@@ -30,7 +30,7 @@ export const Award = () => {
         <h2 className="text-xl font-semibold text-white">수상 내역</h2>
       </div>
 
-      <ul className="grid grid-cols-3 gap-2">
+      <ul className="grid grid-cols-1 gap-2 custom:grid-cols-3">
         {awards.map((award, index) => (
           <li
             key={index}
